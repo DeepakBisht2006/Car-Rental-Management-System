@@ -1,0 +1,6 @@
+@echo off
+echo Compiling...
+javac -cp "lib/mysql-connector-j-9.6.0.jar" -sourcepath src -d bin src/main/Main.java src/database/DBConnection.java src/model/Car.java src/model/Customer.java src/model/Rental.java src/service/CarService.java src/service/CustomerService.java src/service/RentalService.java src/ui/LoginForm.java src/ui/Dashboard.java src/ui/AddCarForm.java src/ui/ViewCarsForm.java src/ui/RegisterCustomerForm.java src/ui/RentCarForm.java src/ui/ReturnCarForm.java
+
+echo Running...
+java -cp "bin;lib/mysql-connector-j-9.6.0.jar" main.Main
